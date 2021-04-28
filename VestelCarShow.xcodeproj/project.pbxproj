@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF52263A18F900D6B673 /* AppDelegate.swift */; };
+		FF40CF55263A18F900D6B673 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF54263A18F900D6B673 /* SceneDelegate.swift */; };
+		FF40CF57263A18F900D6B673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF56263A18F900D6B673 /* ViewController.swift */; };
+		FF40CF5A263A18F900D6B673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF58263A18F900D6B673 /* Main.storyboard */; };
+		FF40CF5C263A18FD00D6B673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF5B263A18FD00D6B673 /* Assets.xcassets */; };
+		FF40CF5F263A18FD00D6B673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF5D263A18FD00D6B673 /* LaunchScreen.storyboard */; };
+		FF40CF6A263A18FD00D6B673 /* VestelCarShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF69263A18FD00D6B673 /* VestelCarShowTests.swift */; };
+		FF40CF75263A18FD00D6B673 /* VestelCarShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF40CF66263A18FD00D6B673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF40CF47263A18F900D6B673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF40CF4E263A18F900D6B673;
+			remoteInfo = VestelCarShow;
+		};
+		FF40CF71263A18FD00D6B673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF40CF47263A18F900D6B673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF40CF4E263A18F900D6B673;
+			remoteInfo = VestelCarShow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF40CF4F263A18F900D6B673 /* VestelCarShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VestelCarShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF40CF52263A18F900D6B673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF40CF54263A18F900D6B673 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF40CF56263A18F900D6B673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF40CF59263A18F900D6B673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF40CF5B263A18FD00D6B673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF40CF5E263A18FD00D6B673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF40CF60263A18FD00D6B673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF40CF65263A18FD00D6B673 /* VestelCarShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VestelCarShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF40CF69263A18FD00D6B673 /* VestelCarShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestelCarShowTests.swift; sourceTree = "<group>"; };
+		FF40CF6B263A18FD00D6B673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF40CF70263A18FD00D6B673 /* VestelCarShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VestelCarShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestelCarShowUITests.swift; sourceTree = "<group>"; };
+		FF40CF76263A18FD00D6B673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF40CF4C263A18F900D6B673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF62263A18FD00D6B673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF6D263A18FD00D6B673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF40CF46263A18F900D6B673 = {
+			isa = PBXGroup;
+			children = (
+				FF40CF51263A18F900D6B673 /* VestelCarShow */,
+				FF40CF68263A18FD00D6B673 /* VestelCarShowTests */,
+				FF40CF73263A18FD00D6B673 /* VestelCarShowUITests */,
+				FF40CF50263A18F900D6B673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF40CF50263A18F900D6B673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF40CF4F263A18F900D6B673 /* VestelCarShow.app */,
+				FF40CF65263A18FD00D6B673 /* VestelCarShowTests.xctest */,
+				FF40CF70263A18FD00D6B673 /* VestelCarShowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF40CF51263A18F900D6B673 /* VestelCarShow */ = {
+			isa = PBXGroup;
+			children = (
+				FF40CF52263A18F900D6B673 /* AppDelegate.swift */,
+				FF40CF54263A18F900D6B673 /* SceneDelegate.swift */,
+				FF40CF56263A18F900D6B673 /* ViewController.swift */,
+				FF40CF58263A18F900D6B673 /* Main.storyboard */,
+				FF40CF5B263A18FD00D6B673 /* Assets.xcassets */,
+				FF40CF5D263A18FD00D6B673 /* LaunchScreen.storyboard */,
+				FF40CF60263A18FD00D6B673 /* Info.plist */,
+			);
+			path = VestelCarShow;
+			sourceTree = "<group>";
+		};
+		FF40CF68263A18FD00D6B673 /* VestelCarShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF40CF69263A18FD00D6B673 /* VestelCarShowTests.swift */,
+				FF40CF6B263A18FD00D6B673 /* Info.plist */,
+			);
+			path = VestelCarShowTests;
+			sourceTree = "<group>";
+		};
+		FF40CF73263A18FD00D6B673 /* VestelCarShowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */,
+				FF40CF76263A18FD00D6B673 /* Info.plist */,
+			);
+			path = VestelCarShowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF40CF4E263A18F900D6B673 /* VestelCarShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF40CF79263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShow" */;
+			buildPhases = (
+				FF40CF4B263A18F900D6B673 /* Sources */,
+				FF40CF4C263A18F900D6B673 /* Frameworks */,
+				FF40CF4D263A18F900D6B673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VestelCarShow;
+			productName = VestelCarShow;
+			productReference = FF40CF4F263A18F900D6B673 /* VestelCarShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF40CF64263A18FD00D6B673 /* VestelCarShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF40CF7C263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowTests" */;
+			buildPhases = (
+				FF40CF61263A18FD00D6B673 /* Sources */,
+				FF40CF62263A18FD00D6B673 /* Frameworks */,
+				FF40CF63263A18FD00D6B673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF40CF67263A18FD00D6B673 /* PBXTargetDependency */,
+			);
+			name = VestelCarShowTests;
+			productName = VestelCarShowTests;
+			productReference = FF40CF65263A18FD00D6B673 /* VestelCarShowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF40CF6F263A18FD00D6B673 /* VestelCarShowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF40CF7F263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowUITests" */;
+			buildPhases = (
+				FF40CF6C263A18FD00D6B673 /* Sources */,
+				FF40CF6D263A18FD00D6B673 /* Frameworks */,
+				FF40CF6E263A18FD00D6B673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF40CF72263A18FD00D6B673 /* PBXTargetDependency */,
+			);
+			name = VestelCarShowUITests;
+			productName = VestelCarShowUITests;
+			productReference = FF40CF70263A18FD00D6B673 /* VestelCarShowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF40CF47263A18F900D6B673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FF40CF4E263A18F900D6B673 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FF40CF64263A18FD00D6B673 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FF40CF4E263A18F900D6B673;
+					};
+					FF40CF6F263A18FD00D6B673 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FF40CF4E263A18F900D6B673;
+					};
+				};
+			};
+			buildConfigurationList = FF40CF4A263A18F900D6B673 /* Build configuration list for PBXProject "VestelCarShow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF40CF46263A18F900D6B673;
+			productRefGroup = FF40CF50263A18F900D6B673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF40CF4E263A18F900D6B673 /* VestelCarShow */,
+				FF40CF64263A18FD00D6B673 /* VestelCarShowTests */,
+				FF40CF6F263A18FD00D6B673 /* VestelCarShowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF40CF4D263A18F900D6B673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF40CF5F263A18FD00D6B673 /* LaunchScreen.storyboard in Resources */,
+				FF40CF5C263A18FD00D6B673 /* Assets.xcassets in Resources */,
+				FF40CF5A263A18F900D6B673 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF63263A18FD00D6B673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF6E263A18FD00D6B673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF40CF4B263A18F900D6B673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF40CF57263A18F900D6B673 /* ViewController.swift in Sources */,
+				FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */,
+				FF40CF55263A18F900D6B673 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF61263A18FD00D6B673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF40CF6A263A18FD00D6B673 /* VestelCarShowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF40CF6C263A18FD00D6B673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF40CF75263A18FD00D6B673 /* VestelCarShowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF40CF67263A18FD00D6B673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF40CF4E263A18F900D6B673 /* VestelCarShow */;
+			targetProxy = FF40CF66263A18FD00D6B673 /* PBXContainerItemProxy */;
+		};
+		FF40CF72263A18FD00D6B673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF40CF4E263A18F900D6B673 /* VestelCarShow */;
+			targetProxy = FF40CF71263A18FD00D6B673 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF40CF58263A18F900D6B673 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF40CF59263A18F900D6B673 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF40CF5D263A18FD00D6B673 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF40CF5E263A18FD00D6B673 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF40CF77263A18FD00D6B673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF40CF78263A18FD00D6B673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF40CF7A263A18FD00D6B673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF40CF7B263A18FD00D6B673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF40CF7D263A18FD00D6B673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VestelCarShow.app/VestelCarShow";
+			};
+			name = Debug;
+		};
+		FF40CF7E263A18FD00D6B673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VestelCarShow.app/VestelCarShow";
+			};
+			name = Release;
+		};
+		FF40CF80263A18FD00D6B673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VestelCarShow;
+			};
+			name = Debug;
+		};
+		FF40CF81263A18FD00D6B673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VB972Q9UF7;
+				INFOPLIST_FILE = VestelCarShowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge..VestelCarShowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VestelCarShow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF40CF4A263A18F900D6B673 /* Build configuration list for PBXProject "VestelCarShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF40CF77263A18FD00D6B673 /* Debug */,
+				FF40CF78263A18FD00D6B673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF40CF79263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF40CF7A263A18FD00D6B673 /* Debug */,
+				FF40CF7B263A18FD00D6B673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF40CF7C263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF40CF7D263A18FD00D6B673 /* Debug */,
+				FF40CF7E263A18FD00D6B673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF40CF7F263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF40CF80263A18FD00D6B673 /* Debug */,
+				FF40CF81263A18FD00D6B673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF40CF47263A18F900D6B673 /* Project object */;
+}
