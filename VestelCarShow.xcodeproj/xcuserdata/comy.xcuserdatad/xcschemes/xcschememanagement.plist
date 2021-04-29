@@ -7,7 +7,25 @@
 		<key>VestelCarShow.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>22</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FF40CF4E263A18F900D6B673</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF40CF64263A18FD00D6B673</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF40CF6F263A18FD00D6B673</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
