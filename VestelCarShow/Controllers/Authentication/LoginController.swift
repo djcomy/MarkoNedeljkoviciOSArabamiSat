@@ -12,7 +12,7 @@ import GoogleSignIn
 class LoginController: UIViewController {
     
     // MARK: - Properties
-    
+
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit

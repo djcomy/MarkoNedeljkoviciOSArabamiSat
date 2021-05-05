@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E2E73A6F31D8C546C5A3C75 /* Pods_VestelCarShowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A191F1A1E4760F75B88F025 /* Pods_VestelCarShowTests.framework */; };
-		DAB9572311E385FBCC297185 /* Pods_VestelCarShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122CF5E06BC66AF215F871DA /* Pods_VestelCarShow.framework */; };
-		F113E1A9B4965074EAA38190 /* Pods_VestelCarShow_VestelCarShowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D2D327A312FAB127FF22E2 /* Pods_VestelCarShow_VestelCarShowUITests.framework */; };
+		28E72F0B04BDF074A7F51AD1 /* Pods_VestelCarShow_VestelCarShowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE73370B09DBAE8C8F3F70B1 /* Pods_VestelCarShow_VestelCarShowUITests.framework */; };
+		ACE41CCDC28938E0DBD4B1BD /* Pods_VestelCarShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E111A9C2986A4A4C87679E /* Pods_VestelCarShow.framework */; };
+		D5D4DC0872314E0AD4057EF8 /* Pods_VestelCarShowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4791E0A23C62CFFB99184 /* Pods_VestelCarShowTests.framework */; };
 		FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF52263A18F900D6B673 /* AppDelegate.swift */; };
-		FF40CF57263A18F900D6B673 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF56263A18F900D6B673 /* HomeController.swift */; };
 		FF40CF5A263A18F900D6B673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF58263A18F900D6B673 /* Main.storyboard */; };
 		FF40CF5C263A18FD00D6B673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF5B263A18FD00D6B673 /* Assets.xcassets */; };
 		FF40CF5F263A18FD00D6B673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF5D263A18FD00D6B673 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,16 @@
 		FF40CF89263A26FB00D6B673 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF88263A26FB00D6B673 /* Extensions.swift */; };
 		FF40CF8B263A270C00D6B673 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF8A263A270C00D6B673 /* LoginController.swift */; };
 		FF40CF8D263A271A00D6B673 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF8C263A271A00D6B673 /* SignUpController.swift */; };
+		FF687C2526421B4D00BB3C6F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1D26421B4D00BB3C6F /* HomeController.swift */; };
+		FF687C2626421B4D00BB3C6F /* HomeController+FetchingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */; };
+		FF687C2726421B4D00BB3C6F /* HomeController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */; };
+		FF687C2826421B4D00BB3C6F /* AddNewCarController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */; };
+		FF687C2926421B4D00BB3C6F /* AddNewCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */; };
+		FF687C2A26421B4D00BB3C6F /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2426421B4D00BB3C6F /* CarDetailController.swift */; };
+		FF687C3226421B8000BB3C6F /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2C26421B8000BB3C6F /* CarCell.swift */; };
+		FF687C3326421B8000BB3C6F /* CarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2D26421B8000BB3C6F /* CarImageView.swift */; };
+		FF687C3426421B8000BB3C6F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2F26421B8000BB3C6F /* Car.swift */; };
+		FF687C3526421B8000BB3C6F /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C3126421B8000BB3C6F /* CarsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,18 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		122CF5E06BC66AF215F871DA /* Pods_VestelCarShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F9CC136E5592CE18155C0DF /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig"; sourceTree = "<group>"; };
-		75987D5D96CF9641201DF8DF /* Pods-VestelCarShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow.release.xcconfig"; sourceTree = "<group>"; };
-		9A191F1A1E4760F75B88F025 /* Pods_VestelCarShowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4D85944B6BD4BE04C37D839 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E7BD37B7C1C3D69358B90BDC /* Pods-VestelCarShowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShowTests.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShowTests/Pods-VestelCarShowTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBA095D287A797ECE6561AAD /* Pods-VestelCarShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow.debug.xcconfig"; sourceTree = "<group>"; };
-		EE226D2C72A943EEFE5FE8AD /* Pods-VestelCarShowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShowTests.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShowTests/Pods-VestelCarShowTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F7D2D327A312FAB127FF22E2 /* Pods_VestelCarShow_VestelCarShowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShow_VestelCarShowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202611E7913C4DB0CF8E9D9E /* Pods-VestelCarShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow.debug.xcconfig"; sourceTree = "<group>"; };
+		36E111A9C2986A4A4C87679E /* Pods_VestelCarShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F4791E0A23C62CFFB99184 /* Pods_VestelCarShowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECD07E1273290E191794302 /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2540C36B3C99E8467A85C0A /* Pods-VestelCarShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow.release.xcconfig"; sourceTree = "<group>"; };
+		BCA2F9D62B8616CBDD895BF1 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBC2EAF05EA63EB95F1AFFFB /* Pods-VestelCarShowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShowTests.release.xcconfig"; path = "Target Support Files/Pods-VestelCarShowTests/Pods-VestelCarShowTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE73370B09DBAE8C8F3F70B1 /* Pods_VestelCarShow_VestelCarShowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VestelCarShow_VestelCarShowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9BBAEC10D25AAFB9F9BE10 /* Pods-VestelCarShowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VestelCarShowTests.debug.xcconfig"; path = "Target Support Files/Pods-VestelCarShowTests/Pods-VestelCarShowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF40CF4F263A18F900D6B673 /* VestelCarShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VestelCarShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF40CF52263A18F900D6B673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF40CF56263A18F900D6B673 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FF40CF59263A18F900D6B673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF40CF5B263A18FD00D6B673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF40CF5E263A18FD00D6B673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +77,16 @@
 		FF40CF88263A26FB00D6B673 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FF40CF8A263A270C00D6B673 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FF40CF8C263A271A00D6B673 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		FF687C1D26421B4D00BB3C6F /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+FetchingData.swift"; sourceTree = "<group>"; };
+		FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+CollectionView.swift"; sourceTree = "<group>"; };
+		FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddNewCarController+handlers.swift"; sourceTree = "<group>"; };
+		FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCarController.swift; sourceTree = "<group>"; };
+		FF687C2426421B4D00BB3C6F /* CarDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
+		FF687C2C26421B8000BB3C6F /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		FF687C2D26421B8000BB3C6F /* CarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarImageView.swift; sourceTree = "<group>"; };
+		FF687C2F26421B8000BB3C6F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		FF687C3126421B8000BB3C6F /* CarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB9572311E385FBCC297185 /* Pods_VestelCarShow.framework in Frameworks */,
+				ACE41CCDC28938E0DBD4B1BD /* Pods_VestelCarShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2E73A6F31D8C546C5A3C75 /* Pods_VestelCarShowTests.framework in Frameworks */,
+				D5D4DC0872314E0AD4057EF8 /* Pods_VestelCarShowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,19 +110,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F113E1A9B4965074EAA38190 /* Pods_VestelCarShow_VestelCarShowUITests.framework in Frameworks */,
+				28E72F0B04BDF074A7F51AD1 /* Pods_VestelCarShow_VestelCarShowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A192D7D9696F4E5D6E1C05E /* Frameworks */ = {
+		5B8904382740F336A133A993 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				122CF5E06BC66AF215F871DA /* Pods_VestelCarShow.framework */,
-				F7D2D327A312FAB127FF22E2 /* Pods_VestelCarShow_VestelCarShowUITests.framework */,
-				9A191F1A1E4760F75B88F025 /* Pods_VestelCarShowTests.framework */,
+				36E111A9C2986A4A4C87679E /* Pods_VestelCarShow.framework */,
+				CE73370B09DBAE8C8F3F70B1 /* Pods_VestelCarShow_VestelCarShowUITests.framework */,
+				88F4791E0A23C62CFFB99184 /* Pods_VestelCarShowTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,12 +130,12 @@
 		DE3195DF05AF247EDD9C486E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EBA095D287A797ECE6561AAD /* Pods-VestelCarShow.debug.xcconfig */,
-				75987D5D96CF9641201DF8DF /* Pods-VestelCarShow.release.xcconfig */,
-				D4D85944B6BD4BE04C37D839 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */,
-				5F9CC136E5592CE18155C0DF /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */,
-				EE226D2C72A943EEFE5FE8AD /* Pods-VestelCarShowTests.debug.xcconfig */,
-				E7BD37B7C1C3D69358B90BDC /* Pods-VestelCarShowTests.release.xcconfig */,
+				202611E7913C4DB0CF8E9D9E /* Pods-VestelCarShow.debug.xcconfig */,
+				A2540C36B3C99E8467A85C0A /* Pods-VestelCarShow.release.xcconfig */,
+				BCA2F9D62B8616CBDD895BF1 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */,
+				9ECD07E1273290E191794302 /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */,
+				CE9BBAEC10D25AAFB9F9BE10 /* Pods-VestelCarShowTests.debug.xcconfig */,
+				CBC2EAF05EA63EB95F1AFFFB /* Pods-VestelCarShowTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -130,7 +148,7 @@
 				FF40CF73263A18FD00D6B673 /* VestelCarShowUITests */,
 				FF40CF50263A18F900D6B673 /* Products */,
 				DE3195DF05AF247EDD9C486E /* Pods */,
-				7A192D7D9696F4E5D6E1C05E /* Frameworks */,
+				5B8904382740F336A133A993 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +167,9 @@
 			children = (
 				FF40CF52263A18F900D6B673 /* AppDelegate.swift */,
 				FF40CF84263A26CA00D6B673 /* Extensions */,
+				FF687C2E26421B8000BB3C6F /* Model */,
+				FF687C2B26421B8000BB3C6F /* View */,
+				FF687C3026421B8000BB3C6F /* ViewModel */,
 				FF40CF85263A26D300D6B673 /* Controllers */,
 				FF40CF58263A18F900D6B673 /* Main.storyboard */,
 				FF40CF5B263A18FD00D6B673 /* Assets.xcassets */,
@@ -190,7 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				FF40CF8E263A297300D6B673 /* Authentication */,
-				FF40CF56263A18F900D6B673 /* HomeController.swift */,
+				FF687C1C26421B4D00BB3C6F /* Home */,
+				FF687C2026421B4D00BB3C6F /* AddNewCar */,
+				FF687C2326421B4D00BB3C6F /* CarDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +227,58 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		FF687C1C26421B4D00BB3C6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C1D26421B4D00BB3C6F /* HomeController.swift */,
+				FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */,
+				FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF687C2026421B4D00BB3C6F /* AddNewCar */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */,
+				FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */,
+			);
+			path = AddNewCar;
+			sourceTree = "<group>";
+		};
+		FF687C2326421B4D00BB3C6F /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C2426421B4D00BB3C6F /* CarDetailController.swift */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		FF687C2B26421B8000BB3C6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C2C26421B8000BB3C6F /* CarCell.swift */,
+				FF687C2D26421B8000BB3C6F /* CarImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF687C2E26421B8000BB3C6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C2F26421B8000BB3C6F /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF687C3026421B8000BB3C6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF687C3126421B8000BB3C6F /* CarsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,13 +286,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF40CF79263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShow" */;
 			buildPhases = (
-				A55063F421FA597A6D355793 /* [CP] Check Pods Manifest.lock */,
+				7053CC96D2FB532F330D88BD /* [CP] Check Pods Manifest.lock */,
 				FF40CF4B263A18F900D6B673 /* Sources */,
 				FF40CF4C263A18F900D6B673 /* Frameworks */,
 				FF40CF4D263A18F900D6B673 /* Resources */,
-				D77D12AA36830BBE6288B5CF /* [CP] Embed Pods Frameworks */,
-				55389F0FE93704D040320BA0 /* [CP] Copy Pods Resources */,
 				FF40CF8F263A2B9300D6B673 /* ShellScript */,
+				B924A8C344AE41E4CD7E6CCD /* [CP] Embed Pods Frameworks */,
+				8A3DE9B19E168A3466C679BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF40CF7C263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowTests" */;
 			buildPhases = (
-				73923AD014EAC0A25884EFE3 /* [CP] Check Pods Manifest.lock */,
+				C5C8973532335A061A405EA5 /* [CP] Check Pods Manifest.lock */,
 				FF40CF61263A18FD00D6B673 /* Sources */,
 				FF40CF62263A18FD00D6B673 /* Frameworks */,
 				FF40CF63263A18FD00D6B673 /* Resources */,
@@ -251,12 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF40CF7F263A18FD00D6B673 /* Build configuration list for PBXNativeTarget "VestelCarShowUITests" */;
 			buildPhases = (
-				9875C398DD2051E6D3A0A52E /* [CP] Check Pods Manifest.lock */,
+				A1CC1DD9C00EB334BE2E5510 /* [CP] Check Pods Manifest.lock */,
 				FF40CF6C263A18FD00D6B673 /* Sources */,
 				FF40CF6D263A18FD00D6B673 /* Frameworks */,
 				FF40CF6E263A18FD00D6B673 /* Resources */,
-				7D0A3D004A0CE3C1385D706C /* [CP] Embed Pods Frameworks */,
-				13E77EDEEB59F486AD80BA67 /* [CP] Copy Pods Resources */,
+				16CA3F1493EFAC4838290ECB /* [CP] Embed Pods Frameworks */,
+				DFBAD11D339B747583D84CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,63 +414,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13E77EDEEB59F486AD80BA67 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55389F0FE93704D040320BA0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73923AD014EAC0A25884EFE3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VestelCarShowTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D0A3D004A0CE3C1385D706C /* [CP] Embed Pods Frameworks */ = {
+		16CA3F1493EFAC4838290ECB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,29 +431,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9875C398DD2051E6D3A0A52E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VestelCarShow-VestelCarShowUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55063F421FA597A6D355793 /* [CP] Check Pods Manifest.lock */ = {
+		7053CC96D2FB532F330D88BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,7 +453,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D77D12AA36830BBE6288B5CF /* [CP] Embed Pods Frameworks */ = {
+		8A3DE9B19E168A3466C679BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1CC1DD9C00EB334BE2E5510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VestelCarShow-VestelCarShowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B924A8C344AE41E4CD7E6CCD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,6 +507,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow/Pods-VestelCarShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C8973532335A061A405EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VestelCarShowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBAD11D339B747583D84CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VestelCarShow-VestelCarShowUITests/Pods-VestelCarShow-VestelCarShowUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF40CF8F263A2B9300D6B673 /* ShellScript */ = {
@@ -501,10 +576,19 @@
 			files = (
 				FF40CF89263A26FB00D6B673 /* Extensions.swift in Sources */,
 				FF40CF8B263A270C00D6B673 /* LoginController.swift in Sources */,
+				FF687C2526421B4D00BB3C6F /* HomeController.swift in Sources */,
+				FF687C2826421B4D00BB3C6F /* AddNewCarController+handlers.swift in Sources */,
 				FF40CF8D263A271A00D6B673 /* SignUpController.swift in Sources */,
-				FF40CF57263A18F900D6B673 /* HomeController.swift in Sources */,
+				FF687C2626421B4D00BB3C6F /* HomeController+FetchingData.swift in Sources */,
+				FF687C3226421B8000BB3C6F /* CarCell.swift in Sources */,
+				FF687C2A26421B4D00BB3C6F /* CarDetailController.swift in Sources */,
+				FF687C2726421B4D00BB3C6F /* HomeController+CollectionView.swift in Sources */,
+				FF687C3326421B8000BB3C6F /* CarImageView.swift in Sources */,
+				FF687C3526421B8000BB3C6F /* CarsViewModel.swift in Sources */,
 				FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */,
 				FF40CF87263A26E900D6B673 /* Constants.swift in Sources */,
+				FF687C3426421B8000BB3C6F /* Car.swift in Sources */,
+				FF687C2926421B4D00BB3C6F /* AddNewCarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +761,7 @@
 		};
 		FF40CF7A263A18FD00D6B673 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBA095D287A797ECE6561AAD /* Pods-VestelCarShow.debug.xcconfig */;
+			baseConfigurationReference = 202611E7913C4DB0CF8E9D9E /* Pods-VestelCarShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -697,7 +781,7 @@
 		};
 		FF40CF7B263A18FD00D6B673 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75987D5D96CF9641201DF8DF /* Pods-VestelCarShow.release.xcconfig */;
+			baseConfigurationReference = A2540C36B3C99E8467A85C0A /* Pods-VestelCarShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -717,7 +801,7 @@
 		};
 		FF40CF7D263A18FD00D6B673 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE226D2C72A943EEFE5FE8AD /* Pods-VestelCarShowTests.debug.xcconfig */;
+			baseConfigurationReference = CE9BBAEC10D25AAFB9F9BE10 /* Pods-VestelCarShowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -740,7 +824,7 @@
 		};
 		FF40CF7E263A18FD00D6B673 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7BD37B7C1C3D69358B90BDC /* Pods-VestelCarShowTests.release.xcconfig */;
+			baseConfigurationReference = CBC2EAF05EA63EB95F1AFFFB /* Pods-VestelCarShowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -763,7 +847,7 @@
 		};
 		FF40CF80263A18FD00D6B673 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D85944B6BD4BE04C37D839 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */;
+			baseConfigurationReference = BCA2F9D62B8616CBDD895BF1 /* Pods-VestelCarShow-VestelCarShowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,7 +868,7 @@
 		};
 		FF40CF81263A18FD00D6B673 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F9CC136E5592CE18155C0DF /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */;
+			baseConfigurationReference = 9ECD07E1273290E191794302 /* Pods-VestelCarShow-VestelCarShowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

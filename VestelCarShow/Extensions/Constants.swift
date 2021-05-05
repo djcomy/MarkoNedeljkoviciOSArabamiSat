@@ -7,5 +7,8 @@
 
 import Firebase
 
-let DB_REF = Database.database(url: "https://coding-challenge-bfec1-default-rtdb.europe-west1.firebasedatabase.app").reference()
+let url = "https://coding-challenge-bfec1-default-rtdb.europe-west1.firebasedatabase.app"
+let DB_REF = Database.database(url: url).reference()
 let USERS_REF = DB_REF.child("users")
+let FirestoreDB = Firestore.firestore()
+let StorageDB = Storage.storage()
