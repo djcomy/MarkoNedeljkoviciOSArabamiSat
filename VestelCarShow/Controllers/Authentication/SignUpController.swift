@@ -11,25 +11,22 @@ import Firebase
 class SignUpController: UIViewController {
     
     // MARK: - Properties
+    let bgImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleToFill
+        iv.clipsToBounds = true
+        iv.image = #imageLiteral(resourceName: "carBackground")
+        return iv
+    }()
     
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.image = #imageLiteral(resourceName: "vestel_logo")
+        iv.image = #imageLiteral(resourceName: "arabam_isat")
         return iv
     }()
-    
-//    lazy var firstNameContainerView: UIView = {
-//        let view = UIView()
-//        return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_person_outline_white_2x"), firstNameTextField)
-//    }()
-//
-//    lazy var lastNameContainerView: UIView = {
-//        let view = UIView()
-//        return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_person_outline_white_2x"), lastNameTextField)
-//    }()
-    
+
     lazy var emailContainerView: UIView = {
         let view = UIView()
         return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), emailTextField)
@@ -44,16 +41,6 @@ class SignUpController: UIViewController {
         let view = UIView()
         return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_lock_outline_white_2x"), passwordTextField)
     }()
-    
-//    lazy var firstNameTextField: UITextField = {
-//        let tf = UITextField()
-//        return tf.textField(withPlaceolder: "First Name", isSecureTextEntry: false)
-//    }()
-//
-//    lazy var lastNameTextField: UITextField = {
-//        let tf = UITextField()
-//        return tf.textField(withPlaceolder: "LastName", isSecureTextEntry: false)
-//    }()
     
     lazy var emailTextField: UITextField = {
         let tf = UITextField()
@@ -100,8 +87,6 @@ class SignUpController: UIViewController {
     // MARK: - Selectors
     
     @objc func handleSignUp() {
-//        guard let name = firstNameTextField.text else { return }
-//        guard let lastname = lastNameTextField.text else { return }
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let username = usernameTextField.text else { return }
@@ -145,22 +130,18 @@ class SignUpController: UIViewController {
         }
     }
     
-    
     // MARK: - Helper Functions
     
     func configureViewComponents() {
         view.backgroundColor = UIColor.mainBlue()
         navigationController?.navigationBar.isHidden = true
         
+        view.addSubview(bgImageView)
+        bgImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        
         view.addSubview(logoImageView)
         logoImageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 60, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 350, height: 150)
         logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
-//        view.addSubview(firstNameContainerView)
-//        firstNameContainerView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
-//
-//        view.addSubview(lastNameContainerView)
-//        lastNameContainerView.anchor(top: firstNameContainerView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
         
         view.addSubview(emailContainerView)
         emailContainerView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)

@@ -16,7 +16,7 @@ extension AddNewCarController: UIImagePickerControllerDelegate, UINavigationCont
         guard let uid = Auth.auth().currentUser?.uid else { return }
 
         // Convert photo.image to a Data type so it can be saved by Firebase Storage
-        guard let photoData = self.carImageView.image?.jpegData(compressionQuality: 0.1) else {
+        guard let photoData = self.carImageView.image?.jpegData(compressionQuality: 0.01) else {
             print("*** ERROR: couuld not convert image to data format")
             return
         }
@@ -53,7 +53,6 @@ extension AddNewCarController: UIImagePickerControllerDelegate, UINavigationCont
                 print("😎 Upload worked! Metadata is \(url)")
                 
                 let dataReference = FirestoreDB.collection(uid).document()
-               // let documentUid = dataReference.documentID
                 
                 let urlString = url.absoluteString
                 
@@ -62,6 +61,8 @@ extension AddNewCarController: UIImagePickerControllerDelegate, UINavigationCont
                     return ["carBrand": self.carBrand, "carModel": self.carModel, "carBirth": self.carBirth, "carHorsePower": self.carPower, "carCapacity": self.carCapacity,
                             "carPrice": self.carPrice, "carKMPassed": self.carKMPassed, "carDesc": self.carDesc, "documentID": self.documentID, "photoURL": urlString]
                 }
+                
+                
                 
                 dataReference.setData(data) { (err) in
                     if let err = err {
@@ -74,63 +75,6 @@ extension AddNewCarController: UIImagePickerControllerDelegate, UINavigationCont
                 }
             })
         }
-        
-//        let uploadTask = storageRef.putData(photoData, metadata: uploadMetadata) {metadata, error in
-//            guard error == nil, metadata != nil else {
-//                print("😡 ERROR during .putData storage upload for reference \(storageRef). Error: \(error!.localizedDescription)")
-//                return
-//            }
-//
-//            storageRef.downloadURL { (url, error) in
-//                guard let downloadURL = url else {
-//                  // Uh-oh, an error occurred!
-//
-//                  return
-//                }
-//                print("😎 Upload worked! Metadata is \(downloadURL)")
-//
-//              }
-//           // print("😎 Upload worked! Metadata is \(metadata!)")
-//
-//        }
-//
-//        uploadTask.observe(.success) { (snapshot) in
-//            // Create the dictionary representing the data we want to save
-//            let dataToSave = dictionary
-//            // This will either create a new doc at documentUUID or update the existing doc with that name
-//            let ref = FirestoreDB.collection(uid).document()
-//            ref.setData(dataToSave) { (error) in
-//                if let error = error {
-//                    print("*** ERROR: updating document \(self.documentUUID) in spot \("carImages") \(error.localizedDescription)")
-//                    completed(false)
-//                } else {
-//                    print("^^^ Document updated with ref ID \(ref.documentID)")
-//                    completed(true)
-//                }
-//            }
-//        }
-//
-//        uploadTask.observe(.failure) { (snapshot) in
-//            if let error = snapshot.error {
-//                print("*** ERROR: upload task for file \(self.documentUUID) failed, in spot \("carImages"), error \(error)")
-//            }
-//            return completed(false)
-//        }
-    }
-    
-    fileprivate func registerUserIntoDatabaseWithUID(_ uid: String, values: [String: AnyObject]) {
-        let ref = Database.database().reference()
-        let usersReference = ref.child("users").child(uid)
-        
-        usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
-            
-            if let err = err {
-                print(err)
-                return
-            }
-            
-            self.dismiss(animated: true, completion: nil)
-        })
     }
     
     @objc func handleSelectedCarImageView() {

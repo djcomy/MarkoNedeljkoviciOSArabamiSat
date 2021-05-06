@@ -7,14 +7,18 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 class HomeController: UIViewController {
-    //
+    
+    let myPrimaryKey = Person.primaryKey()
+    var person = Person()
     // MARK: - Properties
     var pictures = [UIImage]()
     var cars = [Car]()
+    var realmStoredResults: Results<RealmViewModel>!
     var carsViewModel = [CarsViewModel]()
-    //var user: User?
+    var realmViewModel = [RealmViewModel]()
     weak var collectionView: UICollectionView!
     
     override func loadView() {
@@ -45,27 +49,22 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+        let realm = RealmService.shared.realm
+//        let specificPerson = realm.object(ofType: Person.self, forPrimaryKey: myPrimaryKey)
+//        person = specificPerson!
+        realmStoredResults = realm.objects(RealmViewModel.self)
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.register(CarCell.self, forCellWithReuseIdentifier: "CarCell")
         self.collectionView.alwaysBounceVertical = true
         collectionView.backgroundColor = UIColor.white
         authenticateUserAndConfigureView()
-        
-        let button = UIButton(type: .roundedRect)
-        button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-        button.setTitle("Crash", for: [])
-        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
-        view.addSubview(button)
-        //getImage()
     }
-    
-    @IBAction func crashButtonTapped(_ sender: AnyObject) {
-        fatalError()
-    }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        return .darkContent
     }
     
     // MARK: - Selectors
@@ -115,14 +114,21 @@ class HomeController: UIViewController {
     // MARK: - Helper Functions
     
     func configureViewComponents() {
-        view.backgroundColor = UIColor.googleLightGray()
-        navigationController?.navigationBar.barTintColor = UIColor.lightGray
-
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(handleSignOut))
-        navigationItem.leftBarButtonItem?.tintColor = .white
+        let navBar = navigationController?.navigationBar
+        view.backgroundColor = UIColor.white
+        navigationController?.navigationBar.barStyle = .black
+        navBar!.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        navBar!.barTintColor = UIColor(red: 235.0/255.0, green: 235.0/255.0, blue: 235.0/255.0, alpha: 1.0)
+        navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
+        navigationController?.navigationBar.layer.shadowOpacity = 0.75
+        navigationController?.navigationBar.layer.shadowOffset = .zero
+        navigationController?.navigationBar.layer.shadowRadius = 2
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(addNewCar))
-        navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(handleSignOut))
+        navigationItem.leftBarButtonItem?.tintColor = .darkGray
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_add_back_white_24dp"), style: .plain, target: self, action: #selector(addNewCar))
+        navigationItem.rightBarButtonItem?.tintColor = .darkGray
         
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -130,30 +136,5 @@ class HomeController: UIViewController {
     }
 }
 
-extension HomeController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return carsViewModel.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarCell.identifier, for: indexPath) as! CarCell
-        
-        cell.backgroundColor = UIColor.white
-        cell.layer.cornerRadius = 10
-        cell.layer.borderWidth = 1
-        cell.layer.borderColor = UIColor.darkGray.cgColor
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOpacity = 0.5
-        cell.layer.shadowOffset = .zero
-        cell.layer.shadowRadius = 2
-        
-        let carsViewModels = carsViewModel[indexPath.row]
-        cell.carsViewModel = carsViewModels
-        
-        return cell
-    }
-}
+
 

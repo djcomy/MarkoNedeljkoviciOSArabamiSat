@@ -12,3 +12,5 @@ let DB_REF = Database.database(url: url).reference()
 let USERS_REF = DB_REF.child("users")
 let FirestoreDB = Firestore.firestore()
 let StorageDB = Storage.storage()
+let uid = UUID().uuidString
+let PHColor = UIColor(red: 210.0/255.0, green: 210.0/255.0, blue: 210.0/255.0, alpha: 1.0)

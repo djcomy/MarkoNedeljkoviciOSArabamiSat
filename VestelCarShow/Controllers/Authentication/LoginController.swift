@@ -12,12 +12,20 @@ import GoogleSignIn
 class LoginController: UIViewController {
     
     // MARK: - Properties
-
+    let bgImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleToFill
+        iv.clipsToBounds = true
+        iv.image = #imageLiteral(resourceName: "carBackground")
+        return iv
+    }()
+    
+    
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.image = #imageLiteral(resourceName: "vestel_logo")
+        iv.image = #imageLiteral(resourceName: "arabam_isat")
         return iv
     }()
     
@@ -150,13 +158,15 @@ class LoginController: UIViewController {
         navigationController?.pushViewController(SignUpController(), animated: true)
     }
     
-    
     // MARK: - Helper Functions
     
     func configureViewComponents() {
         view.backgroundColor = UIColor.mainBlue()
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
+        
+        view.addSubview(bgImageView)
+        bgImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
         view.addSubview(logoImageView)
         logoImageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 60, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 350, height: 150)

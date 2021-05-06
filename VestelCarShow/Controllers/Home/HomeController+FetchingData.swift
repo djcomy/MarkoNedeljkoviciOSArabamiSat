@@ -4,7 +4,6 @@
 //
 //  Created by Marko Nedeljkovic on 5/4/21.
 //
-
 import Foundation
 import UIKit
 import Firebase
@@ -49,10 +48,8 @@ extension HomeController {
                     return CarsViewModel(car: Car(carBrand: carBrand, carModel: carModel, carBirth: carBirth, carPower: carPower, carCapacity: carCapacity, carPrice: carPrice, carKMPassed: carKMPassed, carDesc: carDesc, photoURL: carImage))
                     
                 }
+                self?.collectionView.reloadData()
             }
-            
-            self?.collectionView.reloadData()
         }
     }
-    
 }

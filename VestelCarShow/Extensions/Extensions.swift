@@ -97,6 +97,48 @@ extension UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func setupToHideKeyboardOnTapOnView()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+    
+}
+
+extension UITableView {
+
+  @IBInspectable
+  var isEmptyRowsHidden: Bool {
+        get {
+          return tableFooterView != nil
+        }
+        set {
+          if newValue {
+              tableFooterView = UIView(frame: .zero)
+          } else {
+              tableFooterView = nil
+          }
+       }
+    }
+}
+
+extension String {
+    func toImage() -> UIImage? {
+        if let data = Data(base64Encoded: self, options: .ignoreUnknownCharacters){
+            return UIImage(data: data)
+        }
+        return nil
+    }
 }
 
 

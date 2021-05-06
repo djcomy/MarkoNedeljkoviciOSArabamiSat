@@ -17,20 +17,28 @@
 		FF40CF6A263A18FD00D6B673 /* VestelCarShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF69263A18FD00D6B673 /* VestelCarShowTests.swift */; };
 		FF40CF75263A18FD00D6B673 /* VestelCarShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */; };
 		FF40CF83263A1B7C00D6B673 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF82263A1B7C00D6B673 /* GoogleService-Info.plist */; };
-		FF40CF87263A26E900D6B673 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF86263A26E900D6B673 /* Constants.swift */; };
-		FF40CF89263A26FB00D6B673 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF88263A26FB00D6B673 /* Extensions.swift */; };
-		FF40CF8B263A270C00D6B673 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF8A263A270C00D6B673 /* LoginController.swift */; };
-		FF40CF8D263A271A00D6B673 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF8C263A271A00D6B673 /* SignUpController.swift */; };
-		FF687C2526421B4D00BB3C6F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1D26421B4D00BB3C6F /* HomeController.swift */; };
-		FF687C2626421B4D00BB3C6F /* HomeController+FetchingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */; };
-		FF687C2726421B4D00BB3C6F /* HomeController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */; };
-		FF687C2826421B4D00BB3C6F /* AddNewCarController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */; };
-		FF687C2926421B4D00BB3C6F /* AddNewCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */; };
-		FF687C2A26421B4D00BB3C6F /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2426421B4D00BB3C6F /* CarDetailController.swift */; };
-		FF687C3226421B8000BB3C6F /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2C26421B8000BB3C6F /* CarCell.swift */; };
-		FF687C3326421B8000BB3C6F /* CarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2D26421B8000BB3C6F /* CarImageView.swift */; };
-		FF687C3426421B8000BB3C6F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C2F26421B8000BB3C6F /* Car.swift */; };
-		FF687C3526421B8000BB3C6F /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF687C3126421B8000BB3C6F /* CarsViewModel.swift */; };
+		FFC48D38264477A600EC5B76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D33264477A600EC5B76 /* Constants.swift */; };
+		FFC48D39264477A600EC5B76 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D34264477A600EC5B76 /* RealmService.swift */; };
+		FFC48D3A264477A600EC5B76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D35264477A600EC5B76 /* Extensions.swift */; };
+		FFC48D3B264477A600EC5B76 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D36264477A600EC5B76 /* Reachability.swift */; };
+		FFC48D3C264477A600EC5B76 /* SendToFirebaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */; };
+		FFC48D42264477FB00EC5B76 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D41264477FB00EC5B76 /* CarModel.swift */; };
+		FFC48D472644781000EC5B76 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D442644781000EC5B76 /* CarCell.swift */; };
+		FFC48D482644781000EC5B76 /* RealmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D452644781000EC5B76 /* RealmCell.swift */; };
+		FFC48D492644781000EC5B76 /* CarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D462644781000EC5B76 /* CarImageView.swift */; };
+		FFC48D4E2644783900EC5B76 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4B2644783900EC5B76 /* PersonModel.swift */; };
+		FFC48D4F2644783900EC5B76 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4C2644783900EC5B76 /* RealmModel.swift */; };
+		FFC48D502644783900EC5B76 /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */; };
+		FFC48D5F2644785200EC5B76 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D532644785200EC5B76 /* HomeController.swift */; };
+		FFC48D602644785200EC5B76 /* HomeController+FetchingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D542644785200EC5B76 /* HomeController+FetchingData.swift */; };
+		FFC48D612644785200EC5B76 /* HomeController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D552644785200EC5B76 /* HomeController+CollectionView.swift */; };
+		FFC48D622644785200EC5B76 /* CarDetailController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D572644785200EC5B76 /* CarDetailController+TableView.swift */; };
+		FFC48D632644785200EC5B76 /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D582644785200EC5B76 /* CarDetailController.swift */; };
+		FFC48D642644785200EC5B76 /* AddNewCarController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5A2644785200EC5B76 /* AddNewCarController+handlers.swift */; };
+		FFC48D652644785200EC5B76 /* AddNewCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5B2644785200EC5B76 /* AddNewCarController.swift */; };
+		FFC48D662644785200EC5B76 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5D2644785200EC5B76 /* LoginController.swift */; };
+		FFC48D672644785200EC5B76 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5E2644785200EC5B76 /* SignUpController.swift */; };
+		FFC48D692644787F00EC5B76 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FFC48D682644787F00EC5B76 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,20 +81,28 @@
 		FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestelCarShowUITests.swift; sourceTree = "<group>"; };
 		FF40CF76263A18FD00D6B673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF40CF82263A1B7C00D6B673 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FF40CF86263A26E900D6B673 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FF40CF88263A26FB00D6B673 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		FF40CF8A263A270C00D6B673 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		FF40CF8C263A271A00D6B673 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		FF687C1D26421B4D00BB3C6F /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+FetchingData.swift"; sourceTree = "<group>"; };
-		FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+CollectionView.swift"; sourceTree = "<group>"; };
-		FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddNewCarController+handlers.swift"; sourceTree = "<group>"; };
-		FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCarController.swift; sourceTree = "<group>"; };
-		FF687C2426421B4D00BB3C6F /* CarDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
-		FF687C2C26421B8000BB3C6F /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
-		FF687C2D26421B8000BB3C6F /* CarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarImageView.swift; sourceTree = "<group>"; };
-		FF687C2F26421B8000BB3C6F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		FF687C3126421B8000BB3C6F /* CarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		FFC48D33264477A600EC5B76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFC48D34264477A600EC5B76 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		FFC48D35264477A600EC5B76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FFC48D36264477A600EC5B76 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToFirebaseClass.swift; sourceTree = "<group>"; };
+		FFC48D41264477FB00EC5B76 /* CarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		FFC48D442644781000EC5B76 /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		FFC48D452644781000EC5B76 /* RealmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCell.swift; sourceTree = "<group>"; };
+		FFC48D462644781000EC5B76 /* CarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarImageView.swift; sourceTree = "<group>"; };
+		FFC48D4B2644783900EC5B76 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		FFC48D4C2644783900EC5B76 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		FFC48D532644785200EC5B76 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FFC48D542644785200EC5B76 /* HomeController+FetchingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+FetchingData.swift"; sourceTree = "<group>"; };
+		FFC48D552644785200EC5B76 /* HomeController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+CollectionView.swift"; sourceTree = "<group>"; };
+		FFC48D572644785200EC5B76 /* CarDetailController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CarDetailController+TableView.swift"; sourceTree = "<group>"; };
+		FFC48D582644785200EC5B76 /* CarDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
+		FFC48D5A2644785200EC5B76 /* AddNewCarController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddNewCarController+handlers.swift"; sourceTree = "<group>"; };
+		FFC48D5B2644785200EC5B76 /* AddNewCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCarController.swift; sourceTree = "<group>"; };
+		FFC48D5D2644785200EC5B76 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FFC48D5E2644785200EC5B76 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		FFC48D682644787F00EC5B76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +159,7 @@
 		FF40CF46263A18F900D6B673 = {
 			isa = PBXGroup;
 			children = (
+				FFC48D682644787F00EC5B76 /* README.md */,
 				FF40CF51263A18F900D6B673 /* VestelCarShow */,
 				FF40CF68263A18FD00D6B673 /* VestelCarShowTests */,
 				FF40CF73263A18FD00D6B673 /* VestelCarShowUITests */,
@@ -166,11 +183,11 @@
 			isa = PBXGroup;
 			children = (
 				FF40CF52263A18F900D6B673 /* AppDelegate.swift */,
-				FF40CF84263A26CA00D6B673 /* Extensions */,
-				FF687C2E26421B8000BB3C6F /* Model */,
-				FF687C2B26421B8000BB3C6F /* View */,
-				FF687C3026421B8000BB3C6F /* ViewModel */,
-				FF40CF85263A26D300D6B673 /* Controllers */,
+				FFC48D32264477A600EC5B76 /* Extensions */,
+				FFC48D40264477FB00EC5B76 /* Model */,
+				FFC48D432644781000EC5B76 /* View */,
+				FFC48D4A2644783900EC5B76 /* ViewModel */,
+				FFC48D512644785200EC5B76 /* Controllers */,
 				FF40CF58263A18F900D6B673 /* Main.storyboard */,
 				FF40CF5B263A18FD00D6B673 /* Assets.xcassets */,
 				FF40CF5D263A18FD00D6B673 /* LaunchScreen.storyboard */,
@@ -198,85 +215,92 @@
 			path = VestelCarShowUITests;
 			sourceTree = "<group>";
 		};
-		FF40CF84263A26CA00D6B673 /* Extensions */ = {
+		FFC48D32264477A600EC5B76 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FF40CF86263A26E900D6B673 /* Constants.swift */,
-				FF40CF88263A26FB00D6B673 /* Extensions.swift */,
+				FFC48D33264477A600EC5B76 /* Constants.swift */,
+				FFC48D34264477A600EC5B76 /* RealmService.swift */,
+				FFC48D35264477A600EC5B76 /* Extensions.swift */,
+				FFC48D36264477A600EC5B76 /* Reachability.swift */,
+				FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FF40CF85263A26D300D6B673 /* Controllers */ = {
+		FFC48D40264477FB00EC5B76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FF40CF8E263A297300D6B673 /* Authentication */,
-				FF687C1C26421B4D00BB3C6F /* Home */,
-				FF687C2026421B4D00BB3C6F /* AddNewCar */,
-				FF687C2326421B4D00BB3C6F /* CarDetails */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		FF40CF8E263A297300D6B673 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				FF40CF8A263A270C00D6B673 /* LoginController.swift */,
-				FF40CF8C263A271A00D6B673 /* SignUpController.swift */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
-		FF687C1C26421B4D00BB3C6F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				FF687C1D26421B4D00BB3C6F /* HomeController.swift */,
-				FF687C1E26421B4D00BB3C6F /* HomeController+FetchingData.swift */,
-				FF687C1F26421B4D00BB3C6F /* HomeController+CollectionView.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		FF687C2026421B4D00BB3C6F /* AddNewCar */ = {
-			isa = PBXGroup;
-			children = (
-				FF687C2126421B4D00BB3C6F /* AddNewCarController+handlers.swift */,
-				FF687C2226421B4D00BB3C6F /* AddNewCarController.swift */,
-			);
-			path = AddNewCar;
-			sourceTree = "<group>";
-		};
-		FF687C2326421B4D00BB3C6F /* CarDetails */ = {
-			isa = PBXGroup;
-			children = (
-				FF687C2426421B4D00BB3C6F /* CarDetailController.swift */,
-			);
-			path = CarDetails;
-			sourceTree = "<group>";
-		};
-		FF687C2B26421B8000BB3C6F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FF687C2C26421B8000BB3C6F /* CarCell.swift */,
-				FF687C2D26421B8000BB3C6F /* CarImageView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FF687C2E26421B8000BB3C6F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FF687C2F26421B8000BB3C6F /* Car.swift */,
+				FFC48D41264477FB00EC5B76 /* CarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FF687C3026421B8000BB3C6F /* ViewModel */ = {
+		FFC48D432644781000EC5B76 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF687C3126421B8000BB3C6F /* CarsViewModel.swift */,
+				FFC48D442644781000EC5B76 /* CarCell.swift */,
+				FFC48D452644781000EC5B76 /* RealmCell.swift */,
+				FFC48D462644781000EC5B76 /* CarImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC48D4A2644783900EC5B76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D4B2644783900EC5B76 /* PersonModel.swift */,
+				FFC48D4C2644783900EC5B76 /* RealmModel.swift */,
+				FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFC48D512644785200EC5B76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D522644785200EC5B76 /* Home */,
+				FFC48D562644785200EC5B76 /* CarDetails */,
+				FFC48D592644785200EC5B76 /* AddNewCar */,
+				FFC48D5C2644785200EC5B76 /* Authentication */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFC48D522644785200EC5B76 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D532644785200EC5B76 /* HomeController.swift */,
+				FFC48D542644785200EC5B76 /* HomeController+FetchingData.swift */,
+				FFC48D552644785200EC5B76 /* HomeController+CollectionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFC48D562644785200EC5B76 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D572644785200EC5B76 /* CarDetailController+TableView.swift */,
+				FFC48D582644785200EC5B76 /* CarDetailController.swift */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		FFC48D592644785200EC5B76 /* AddNewCar */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D5A2644785200EC5B76 /* AddNewCarController+handlers.swift */,
+				FFC48D5B2644785200EC5B76 /* AddNewCarController.swift */,
+			);
+			path = AddNewCar;
+			sourceTree = "<group>";
+		};
+		FFC48D5C2644785200EC5B76 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FFC48D5D2644785200EC5B76 /* LoginController.swift */,
+				FFC48D5E2644785200EC5B76 /* SignUpController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +416,7 @@
 			files = (
 				FF40CF5F263A18FD00D6B673 /* LaunchScreen.storyboard in Resources */,
 				FF40CF83263A1B7C00D6B673 /* GoogleService-Info.plist in Resources */,
+				FFC48D692644787F00EC5B76 /* README.md in Resources */,
 				FF40CF5C263A18FD00D6B673 /* Assets.xcassets in Resources */,
 				FF40CF5A263A18F900D6B673 /* Main.storyboard in Resources */,
 			);
@@ -574,21 +599,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF40CF89263A26FB00D6B673 /* Extensions.swift in Sources */,
-				FF40CF8B263A270C00D6B673 /* LoginController.swift in Sources */,
-				FF687C2526421B4D00BB3C6F /* HomeController.swift in Sources */,
-				FF687C2826421B4D00BB3C6F /* AddNewCarController+handlers.swift in Sources */,
-				FF40CF8D263A271A00D6B673 /* SignUpController.swift in Sources */,
-				FF687C2626421B4D00BB3C6F /* HomeController+FetchingData.swift in Sources */,
-				FF687C3226421B8000BB3C6F /* CarCell.swift in Sources */,
-				FF687C2A26421B4D00BB3C6F /* CarDetailController.swift in Sources */,
-				FF687C2726421B4D00BB3C6F /* HomeController+CollectionView.swift in Sources */,
-				FF687C3326421B8000BB3C6F /* CarImageView.swift in Sources */,
-				FF687C3526421B8000BB3C6F /* CarsViewModel.swift in Sources */,
+				FFC48D482644781000EC5B76 /* RealmCell.swift in Sources */,
+				FFC48D492644781000EC5B76 /* CarImageView.swift in Sources */,
+				FFC48D5F2644785200EC5B76 /* HomeController.swift in Sources */,
+				FFC48D502644783900EC5B76 /* CarsViewModel.swift in Sources */,
+				FFC48D38264477A600EC5B76 /* Constants.swift in Sources */,
+				FFC48D612644785200EC5B76 /* HomeController+CollectionView.swift in Sources */,
+				FFC48D39264477A600EC5B76 /* RealmService.swift in Sources */,
+				FFC48D3A264477A600EC5B76 /* Extensions.swift in Sources */,
+				FFC48D3C264477A600EC5B76 /* SendToFirebaseClass.swift in Sources */,
+				FFC48D672644785200EC5B76 /* SignUpController.swift in Sources */,
+				FFC48D652644785200EC5B76 /* AddNewCarController.swift in Sources */,
+				FFC48D4F2644783900EC5B76 /* RealmModel.swift in Sources */,
+				FFC48D642644785200EC5B76 /* AddNewCarController+handlers.swift in Sources */,
+				FFC48D622644785200EC5B76 /* CarDetailController+TableView.swift in Sources */,
+				FFC48D662644785200EC5B76 /* LoginController.swift in Sources */,
+				FFC48D42264477FB00EC5B76 /* CarModel.swift in Sources */,
+				FFC48D602644785200EC5B76 /* HomeController+FetchingData.swift in Sources */,
+				FFC48D632644785200EC5B76 /* CarDetailController.swift in Sources */,
 				FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */,
-				FF40CF87263A26E900D6B673 /* Constants.swift in Sources */,
-				FF687C3426421B8000BB3C6F /* Car.swift in Sources */,
-				FF687C2926421B4D00BB3C6F /* AddNewCarController.swift in Sources */,
+				FFC48D3B264477A600EC5B76 /* Reachability.swift in Sources */,
+				FFC48D4E2644783900EC5B76 /* PersonModel.swift in Sources */,
+				FFC48D472644781000EC5B76 /* CarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
