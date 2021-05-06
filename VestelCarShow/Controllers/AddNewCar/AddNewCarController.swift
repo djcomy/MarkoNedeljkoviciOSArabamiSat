@@ -11,7 +11,6 @@ import RealmSwift
 
 class AddNewCarController: UIViewController {
     
-    //let realm = try! Realm()
     var person = Person()
     var realmStoredResults: Results<RealmViewModel>!
     var realmViewModel = [RealmViewModel]()
@@ -175,23 +174,23 @@ class AddNewCarController: UIViewController {
     @objc func saveToFirebase() {
         
         updateUploadValues()
-        saveToRealm()
+        //saveToRealm()
         saveData { success in
             if success {
                 self.saveToRealm()
                 self.leaveViewController()
             } else {
-                
+                self.leaveViewController()
                 print("*** ERROR: Couldn't leave this view controller because data wasn't saved.")
             }
         }
     }
     
     func saveToRealm() {
-        let data = NSData(data: carImageView.image!.jpegData(compressionQuality: 0.1)!)
-        let imageData = String(decoding: data, as: UTF8.self)
-        
-        let realmViewModel = RealmViewModel()
+//        let data = NSData(data: carImageView.image!.jpegData(compressionQuality: 0.1)!)
+//        let imageData = String(decoding: data, as: UTF8.self)
+//
+      let realmViewModel = RealmViewModel()
         
         realmViewModel.carBrand = carBrandTextField.text!
         realmViewModel.carModel = carModelTextField.text!
@@ -202,7 +201,7 @@ class AddNewCarController: UIViewController {
         realmViewModel.carKMPassed = carKMPassedTextField.text!
         realmViewModel.carDesc = carDescTextField.text!
         realmViewModel.carBrand = carBrandTextField.text!
-        realmViewModel.photoUrl = imageData
+       // realmViewModel.photoUrl = imageData
         
         let realmObjects = RealmViewModel(
             carBrand: realmViewModel.carBrand!,
@@ -213,9 +212,10 @@ class AddNewCarController: UIViewController {
             carPrice: realmViewModel.carPrice!,
             carKMPassed: realmViewModel.carKMPassed!,
             carDesc: realmViewModel.carDesc!,
-            photoURL: realmViewModel.photoUrl!)
+            photoURL: "")
         
-        RealmService.shared.create(realmObjects)
+        //RealmService.shared.create(realmObjects)
+        RealmViewModel.add(object: realmObjects)
     }
     
     func configureViewComponents() {

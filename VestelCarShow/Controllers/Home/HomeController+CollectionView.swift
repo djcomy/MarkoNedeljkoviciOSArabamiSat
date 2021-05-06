@@ -11,9 +11,10 @@ extension HomeController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
+        
         if Reachability.isConnectedToNetwork() {
-            
             return carsViewModel.count
+            
         } else {
             return realmStoredResults.count
         }
@@ -21,41 +22,52 @@ extension HomeController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarCell.identifier, for: indexPath) as! CarCell
-        
-        cell.backgroundColor = UIColor.white
-        cell.layer.cornerRadius = 10
-        cell.layer.borderWidth = 1
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        
-        
         
         if Reachability.isConnectedToNetwork() {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarCell.identifier, for: indexPath) as! CarCell
+            
             let carsViewModels = carsViewModel[indexPath.row]
             cell.carsViewModel = carsViewModels
             
+            cell.backgroundColor = UIColor.white
+            cell.layer.cornerRadius = 10
+            cell.layer.borderWidth = 1
+            cell.layer.borderColor = UIColor.lightGray.cgColor
+            
+            return cell
+            
         } else {
             
-            let lists = RealmService.shared.realm.objects(RealmViewModel.self)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RealmCell.identifier, for: indexPath) as! RealmCell
+            let items = realmStoredResults![indexPath.row]
+
+            print("RRR \(items)")
+            cell.realmViewModel = items
             
-            let realmViewModel = lists[indexPath.item].carBirth
+            cell.backgroundColor = UIColor.white
+            cell.layer.cornerRadius = 10
+            cell.layer.borderWidth = 1
+            cell.layer.borderColor = UIColor.lightGray.cgColor
             
-            print("RRR \(realmViewModel)")
-            //cell.realmViewModel = realmViewModel
+            return cell
+            
         }
-        
-        
-        return cell
     }
 }
 
 extension HomeController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //var indexPath : NSIndexPath = collectionView.indexPathsForSelectedItems
-        let dataSource = realmStoredResults[indexPath.row]
+        
         let carDetailController = CarDetailController()
-        carDetailController.detailRealmModel = dataSource
+        if Reachability.isConnectedToNetwork() {
+            let dataSource = carsViewModel[indexPath.row]
+            
+            carDetailController.detailModel = dataSource
+        } else {
+            let dataSource = realmViewModel[indexPath.row]
+            carDetailController.detailRealmModel = dataSource
+        }
         self.navigationController?.pushViewController(carDetailController, animated: true)
         
     }

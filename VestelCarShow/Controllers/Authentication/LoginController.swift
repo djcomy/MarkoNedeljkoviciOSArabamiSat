@@ -8,8 +8,13 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import RealmSwift
 
 class LoginController: UIViewController {
+    
+   // let myPrimaryKey = Person.primaryKey()
+    //var person = Person()
+    let realm = try! Realm()
     
     // MARK: - Properties
     let bgImageView: UIImageView = {

@@ -141,6 +141,15 @@ extension String {
     }
 }
 
+extension UIImage {
+    var jpeg: Data? { jpegData(compressionQuality: 0.3) }  // QUALITY min = 0 / max = 1
+    var png: Data? { pngData() }
+}
+
+extension Data {
+    var uiImage: UIImage? { UIImage(data: self) }
+}
+
 
 
 

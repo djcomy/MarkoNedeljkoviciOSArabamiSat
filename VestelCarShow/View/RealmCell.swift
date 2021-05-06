@@ -12,24 +12,21 @@ class RealmCell: UICollectionViewCell {
     
     public static let identifier = "RealmCell"
     let realm = try! Realm()
-    
+   // private var model: RealmViewModel?
 
-    
-    var realmViewModel: RealmViewModel! {
+    var realmViewModel: RealmViewModel? {
         didSet{
             
-            guard let url = NSURL(string:realmViewModel.photoUrl!) else { return }
-            guard let imagedata = NSData.init(contentsOf: url as URL) else { return }
+           // guard let url = NSURL(string:realmViewModel!.photoUrl!) else { return }
+          //  guard NSData.init(contentsOf: url as URL) != nil else { return }
             
-            carBrandLabel.text = realmViewModel.carBrand
-            carModelLabel.text = realmViewModel.carModel
-            carBirthLabel.text = realmViewModel.carBirth
-            carImage.image = UIImage(data:imagedata as Data)
+            carBrandLabel.text = realmViewModel!.carBrand
+            carModelLabel.text = realmViewModel!.carModel
+            carBirthLabel.text = realmViewModel!.carBirth
+            ///carImage.image = UIImage(data:imagedata as Data)
         }
     }
-        
-        
-        
+
         private var carImage: UIImageView = CarImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
         
         private var carBrandLabel: UILabel = {

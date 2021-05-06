@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "vestel_logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "baseline_confirm_back_white_24dp.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

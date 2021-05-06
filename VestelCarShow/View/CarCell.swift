@@ -11,7 +11,7 @@ import RealmSwift
 class CarCell: UICollectionViewCell {
     
     public static let identifier = "CarCell"
-    let realm = try! Realm()
+    let realm = RealmService.shared.realm
     let lists = RealmService.shared.realm.objects(RealmViewModel.self)
     var carsViewModel: CarsViewModel! {
         didSet{
@@ -27,18 +27,18 @@ class CarCell: UICollectionViewCell {
         }
     }
     
-    var realmViewModel: RealmViewModel! {
-        didSet{
-            
-            guard let url = NSURL(string:realmViewModel.photoUrl!) else { return }
-            guard let imagedata = NSData.init(contentsOf: url as URL) else { return }
-            
-            carBrandLabel.text = realmViewModel.carBrand
-            carModelLabel.text = realmViewModel.carModel
-            carBirthLabel.text = realmViewModel.carBirth
-            carImage.image = UIImage(data:imagedata as Data)
-        }
-    }
+//    var realmViewModel: RealmViewModel! {
+//        didSet{
+//            
+//            guard let url = NSURL(string:realmViewModel.photoUrl!) else { return }
+//            guard let imagedata = NSData.init(contentsOf: url as URL) else { return }
+//            
+//            carBrandLabel.text = realmViewModel.carBrand
+//            carModelLabel.text = realmViewModel.carModel
+//            carBirthLabel.text = realmViewModel.carBirth
+//            carImage.image = UIImage(data:imagedata as Data)
+//        }
+//    }
     
     
     

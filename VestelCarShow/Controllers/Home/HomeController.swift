@@ -17,6 +17,7 @@ class HomeController: UIViewController {
     var pictures = [UIImage]()
     var cars = [Car]()
     var realmStoredResults: Results<RealmViewModel>!
+    private var itemsToken: NotificationToken?
     var carsViewModel = [CarsViewModel]()
     var realmViewModel = [RealmViewModel]()
     weak var collectionView: UICollectionView!
@@ -50,17 +51,43 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        if Reachability.isConnectedToNetwork(){
+            DispatchQueue.main.async {
+              self.loadUserData()
+                
+            }
+        }
         let realm = RealmService.shared.realm
-//        let specificPerson = realm.object(ofType: Person.self, forPrimaryKey: myPrimaryKey)
-//        person = specificPerson!
-        realmStoredResults = realm.objects(RealmViewModel.self)
+        let specificPerson = realm.object(ofType: Person.self, forPrimaryKey: myPrimaryKey)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        realmStoredResults = RealmViewModel.all()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.register(CarCell.self, forCellWithReuseIdentifier: "CarCell")
+        self.collectionView.register(RealmCell.self, forCellWithReuseIdentifier: "RealmCell")
         self.collectionView.alwaysBounceVertical = true
         collectionView.backgroundColor = UIColor.white
         authenticateUserAndConfigureView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+        
+        
+        self.itemsToken = self.realmStoredResults?.observe { [weak self] (changes: RealmCollectionChange) in
+                  DispatchQueue.main.async {
+                    self!.collectionView.reloadData()
+                  }
+              }
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+      super.viewWillDisappear(animated)
+      itemsToken?.invalidate()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -94,7 +121,6 @@ class HomeController: UIViewController {
             }
         } else {
             configureViewComponents()
-            loadUserData()
             
         }
     }

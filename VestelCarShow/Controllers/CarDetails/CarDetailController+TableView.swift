@@ -12,17 +12,24 @@ import UIKit
 extension CarDetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         
-        let carInfoArray = [detailRealmModel.carBrand, detailRealmModel.carModel, detailRealmModel.carBirth, detailRealmModel.carPower, detailRealmModel.carCapacity, detailRealmModel.carKMPassed, detailRealmModel.carPrice, detailRealmModel.carDesc]
-
-        cell.textLabel!.text = carInfoArray[indexPath.row]
-
+        let carInfoArray = [detailModel.carBrand, detailModel.carModel, detailModel.carBirth, detailModel.carPower, detailModel.carCapacity, detailModel.carKMPassed, detailModel.carPrice, detailModel.carDesc]
+        
+        let carInfoRealmArray = [detailRealmModel.carBrand, detailRealmModel.carModel, detailRealmModel.carBirth, detailRealmModel.carPower, detailRealmModel.carCapacity, detailRealmModel.carKMPassed, detailRealmModel.carPrice, detailRealmModel.carDesc]
+        
+        if Reachability.isConnectedToNetwork() {
+            cell.textLabel!.text = carInfoArray[indexPath.row]
+        } else {
+            cell.textLabel!.text = carInfoRealmArray[indexPath.row]
+            
+        }
+        
         return cell
     }
     

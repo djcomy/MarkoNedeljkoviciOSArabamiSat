@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 struct CarInfo {
     let carInfoType: String?
@@ -16,7 +17,12 @@ struct CarInfo {
 
 class CarDetailController: UIViewController {
     
+    let realm = try! Realm()
+    
+    var detailModel = CarsViewModel(car: Car(carBrand: "carBrand", carModel: "carModel", carBirth: "carBirth", carPower: "carPower", carCapacity: "carCapacity", carPrice: "carPrice", carKMPassed: "carKMPassed", carDesc: "carDesc", photoURL: "photoUrl"))
+    
     var detailRealmModel = RealmViewModel()
+
     var tableView = UITableView()
     
     lazy var carImageView: UIImageView = {
@@ -49,7 +55,7 @@ class CarDetailController: UIViewController {
     func setCarPhoto(){
         
         if Reachability.isConnectedToNetwork() {
-            guard let url = NSURL(string:detailRealmModel.photoUrl!) else { return }
+            guard let url = NSURL(string:detailModel.photoURL!) else { return }
             print(url)
             guard let imagedata = NSData.init(contentsOf: url as URL) else { return }
             self.carImageView.image = UIImage(data:imagedata as Data)
@@ -99,7 +105,7 @@ class CarDetailController: UIViewController {
         view.backgroundColor = UIColor.white
         navigationController?.navigationBar.barStyle = .black
         navBar!.barTintColor = UIColor(red: 235.0/255.0, green: 235.0/255.0, blue: 235.0/255.0, alpha: 1.0)
-        navigationItem.title = "Add a new Car"
+        navigationItem.title = "Car Details"
         navBar!.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
         navigationController?.navigationBar.layer.shadowOpacity = 0.75

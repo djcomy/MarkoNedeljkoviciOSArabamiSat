@@ -18,16 +18,13 @@
 		FF40CF75263A18FD00D6B673 /* VestelCarShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40CF74263A18FD00D6B673 /* VestelCarShowUITests.swift */; };
 		FF40CF83263A1B7C00D6B673 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF40CF82263A1B7C00D6B673 /* GoogleService-Info.plist */; };
 		FFC48D38264477A600EC5B76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D33264477A600EC5B76 /* Constants.swift */; };
-		FFC48D39264477A600EC5B76 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D34264477A600EC5B76 /* RealmService.swift */; };
 		FFC48D3A264477A600EC5B76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D35264477A600EC5B76 /* Extensions.swift */; };
 		FFC48D3B264477A600EC5B76 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D36264477A600EC5B76 /* Reachability.swift */; };
-		FFC48D3C264477A600EC5B76 /* SendToFirebaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */; };
 		FFC48D42264477FB00EC5B76 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D41264477FB00EC5B76 /* CarModel.swift */; };
 		FFC48D472644781000EC5B76 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D442644781000EC5B76 /* CarCell.swift */; };
 		FFC48D482644781000EC5B76 /* RealmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D452644781000EC5B76 /* RealmCell.swift */; };
 		FFC48D492644781000EC5B76 /* CarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D462644781000EC5B76 /* CarImageView.swift */; };
-		FFC48D4E2644783900EC5B76 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4B2644783900EC5B76 /* PersonModel.swift */; };
-		FFC48D4F2644783900EC5B76 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4C2644783900EC5B76 /* RealmModel.swift */; };
+		FFC48D4F2644783900EC5B76 /* RealmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4C2644783900EC5B76 /* RealmViewModel.swift */; };
 		FFC48D502644783900EC5B76 /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */; };
 		FFC48D5F2644785200EC5B76 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D532644785200EC5B76 /* HomeController.swift */; };
 		FFC48D602644785200EC5B76 /* HomeController+FetchingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D542644785200EC5B76 /* HomeController+FetchingData.swift */; };
@@ -39,6 +36,8 @@
 		FFC48D662644785200EC5B76 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5D2644785200EC5B76 /* LoginController.swift */; };
 		FFC48D672644785200EC5B76 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D5E2644785200EC5B76 /* SignUpController.swift */; };
 		FFC48D692644787F00EC5B76 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FFC48D682644787F00EC5B76 /* README.md */; };
+		FFC48D6A2644E16E00EC5B76 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D4B2644783900EC5B76 /* PersonModel.swift */; };
+		FFC48D6B2644FB6A00EC5B76 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC48D34264477A600EC5B76 /* RealmService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,13 +84,12 @@
 		FFC48D34264477A600EC5B76 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		FFC48D35264477A600EC5B76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FFC48D36264477A600EC5B76 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToFirebaseClass.swift; sourceTree = "<group>"; };
 		FFC48D41264477FB00EC5B76 /* CarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
 		FFC48D442644781000EC5B76 /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		FFC48D452644781000EC5B76 /* RealmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCell.swift; sourceTree = "<group>"; };
 		FFC48D462644781000EC5B76 /* CarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarImageView.swift; sourceTree = "<group>"; };
 		FFC48D4B2644783900EC5B76 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
-		FFC48D4C2644783900EC5B76 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		FFC48D4C2644783900EC5B76 /* RealmViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmViewModel.swift; sourceTree = "<group>"; };
 		FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
 		FFC48D532644785200EC5B76 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FFC48D542644785200EC5B76 /* HomeController+FetchingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeController+FetchingData.swift"; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				FFC48D34264477A600EC5B76 /* RealmService.swift */,
 				FFC48D35264477A600EC5B76 /* Extensions.swift */,
 				FFC48D36264477A600EC5B76 /* Reachability.swift */,
-				FFC48D37264477A600EC5B76 /* SendToFirebaseClass.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,8 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				FFC48D4B2644783900EC5B76 /* PersonModel.swift */,
-				FFC48D4C2644783900EC5B76 /* RealmModel.swift */,
 				FFC48D4D2644783900EC5B76 /* CarsViewModel.swift */,
+				FFC48D4C2644783900EC5B76 /* RealmViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -258,10 +255,10 @@
 		FFC48D512644785200EC5B76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFC48D5C2644785200EC5B76 /* Authentication */,
 				FFC48D522644785200EC5B76 /* Home */,
 				FFC48D562644785200EC5B76 /* CarDetails */,
 				FFC48D592644785200EC5B76 /* AddNewCar */,
-				FFC48D5C2644785200EC5B76 /* Authentication */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,8 +276,8 @@
 		FFC48D562644785200EC5B76 /* CarDetails */ = {
 			isa = PBXGroup;
 			children = (
-				FFC48D572644785200EC5B76 /* CarDetailController+TableView.swift */,
 				FFC48D582644785200EC5B76 /* CarDetailController.swift */,
+				FFC48D572644785200EC5B76 /* CarDetailController+TableView.swift */,
 			);
 			path = CarDetails;
 			sourceTree = "<group>";
@@ -605,21 +602,20 @@
 				FFC48D502644783900EC5B76 /* CarsViewModel.swift in Sources */,
 				FFC48D38264477A600EC5B76 /* Constants.swift in Sources */,
 				FFC48D612644785200EC5B76 /* HomeController+CollectionView.swift in Sources */,
-				FFC48D39264477A600EC5B76 /* RealmService.swift in Sources */,
 				FFC48D3A264477A600EC5B76 /* Extensions.swift in Sources */,
-				FFC48D3C264477A600EC5B76 /* SendToFirebaseClass.swift in Sources */,
 				FFC48D672644785200EC5B76 /* SignUpController.swift in Sources */,
 				FFC48D652644785200EC5B76 /* AddNewCarController.swift in Sources */,
-				FFC48D4F2644783900EC5B76 /* RealmModel.swift in Sources */,
+				FFC48D4F2644783900EC5B76 /* RealmViewModel.swift in Sources */,
 				FFC48D642644785200EC5B76 /* AddNewCarController+handlers.swift in Sources */,
 				FFC48D622644785200EC5B76 /* CarDetailController+TableView.swift in Sources */,
 				FFC48D662644785200EC5B76 /* LoginController.swift in Sources */,
 				FFC48D42264477FB00EC5B76 /* CarModel.swift in Sources */,
+				FFC48D6A2644E16E00EC5B76 /* PersonModel.swift in Sources */,
 				FFC48D602644785200EC5B76 /* HomeController+FetchingData.swift in Sources */,
+				FFC48D6B2644FB6A00EC5B76 /* RealmService.swift in Sources */,
 				FFC48D632644785200EC5B76 /* CarDetailController.swift in Sources */,
 				FF40CF53263A18F900D6B673 /* AppDelegate.swift in Sources */,
 				FFC48D3B264477A600EC5B76 /* Reachability.swift in Sources */,
-				FFC48D4E2644783900EC5B76 /* PersonModel.swift in Sources */,
 				FFC48D472644781000EC5B76 /* CarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
