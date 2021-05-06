@@ -134,7 +134,6 @@ class AddNewCarController: UIViewController {
         
     }
     
-    
     func setUItextView(label: UITextField) {
         label.backgroundColor = PHColor
         label.layer.shadowColor = UIColor.darkGray.cgColor
@@ -174,7 +173,7 @@ class AddNewCarController: UIViewController {
     @objc func saveToFirebase() {
         
         updateUploadValues()
-        //saveToRealm()
+
         saveData { success in
             if success {
                 self.saveToRealm()
@@ -187,10 +186,10 @@ class AddNewCarController: UIViewController {
     }
     
     func saveToRealm() {
-//        let data = NSData(data: carImageView.image!.jpegData(compressionQuality: 0.1)!)
-//        let imageData = String(decoding: data, as: UTF8.self)
-//
-      let realmViewModel = RealmViewModel()
+        //        let data = NSData(data: carImageView.image!.jpegData(compressionQuality: 0.1)!)
+        //        let imageData = String(decoding: data, as: UTF8.self)
+        //
+        let realmViewModel = RealmViewModel()
         
         realmViewModel.carBrand = carBrandTextField.text!
         realmViewModel.carModel = carModelTextField.text!
@@ -201,7 +200,7 @@ class AddNewCarController: UIViewController {
         realmViewModel.carKMPassed = carKMPassedTextField.text!
         realmViewModel.carDesc = carDescTextField.text!
         realmViewModel.carBrand = carBrandTextField.text!
-       // realmViewModel.photoUrl = imageData
+        // realmViewModel.photoUrl = imageData
         
         let realmObjects = RealmViewModel(
             carBrand: realmViewModel.carBrand!,
