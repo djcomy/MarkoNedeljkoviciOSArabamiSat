@@ -63,7 +63,7 @@ class RealmService {
         NotificationCenter.default.addObserver(forName: NSNotification.Name("RealmError"),
                                                object: nil,
                                                queue: nil) { (notification) in
-                                                completion(notification.object as? Error)
+            completion(notification.object as? Error)
         }
     }
     

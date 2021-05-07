@@ -10,11 +10,11 @@ import Photos
 import Firebase
 
 extension AddNewCarController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @objc func saveData(completed: @escaping (Bool) -> ()) {
         
         guard let uid = Auth.auth().currentUser?.uid else { return }
-
+        
         // Convert photo.image to a Data type so it can be saved by Firebase Storage
         guard let photoData = self.carImageView.image?.jpegData(compressionQuality: 0.01) else {
             print("*** ERROR: couuld not convert image to data format")

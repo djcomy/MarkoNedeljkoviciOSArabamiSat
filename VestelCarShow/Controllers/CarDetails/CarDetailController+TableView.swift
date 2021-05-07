@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 extension CarDetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

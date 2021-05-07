@@ -53,7 +53,7 @@ class HomeController: UIViewController {
         overrideUserInterfaceStyle = .light
         if Reachability.isConnectedToNetwork(){
             DispatchQueue.main.async {
-              self.loadUserData()
+                self.loadUserData()
                 
             }
         }
@@ -74,22 +74,22 @@ class HomeController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
         
         self.itemsToken = self.realmStoredResults?.observe { [weak self] (changes: RealmCollectionChange) in
-                  DispatchQueue.main.async {
-                    self!.collectionView.reloadData()
-                  }
-              }
-
+            DispatchQueue.main.async {
+                self!.collectionView.reloadData()
+            }
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-      super.viewWillDisappear(animated)
-      itemsToken?.invalidate()
+        super.viewWillDisappear(animated)
+        itemsToken?.invalidate()
     }
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
     }
@@ -138,7 +138,6 @@ class HomeController: UIViewController {
     }
     
     // MARK: - Helper Functions
-    
     func configureViewComponents() {
         let navBar = navigationController?.navigationBar
         view.backgroundColor = UIColor.white

@@ -26,7 +26,7 @@ class SignUpController: UIViewController {
         iv.image = #imageLiteral(resourceName: "arabam_isat")
         return iv
     }()
-
+    
     lazy var emailContainerView: UIView = {
         let view = UIView()
         return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), emailTextField)

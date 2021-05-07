@@ -11,6 +11,5 @@ import Firebase
 struct Car: Codable {
     
     public let carBrand, carModel, carBirth, carPower, carCapacity, carPrice, carKMPassed, carDesc, photoURL : String
-
+    
 }
-

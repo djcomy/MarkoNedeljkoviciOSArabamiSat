@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class CarsViewModel {
-
+    
     var photoURL: String?
     var carBrand: String?
     var carModel: String?

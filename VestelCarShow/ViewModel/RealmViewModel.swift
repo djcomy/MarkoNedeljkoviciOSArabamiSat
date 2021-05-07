@@ -8,11 +8,10 @@
 import Foundation
 import RealmSwift
 
-
 @objcMembers class RealmViewModel: Object {
     
     enum Property: String {
-      case isCompleted
+        case isCompleted
     }
     
     dynamic var personID = uid
@@ -47,26 +46,26 @@ import RealmSwift
     }
 }
 extension RealmViewModel {
-
+    
     static func all(in realm: Realm = try! Realm()) -> Results<RealmViewModel> {
-      return realm.objects(RealmViewModel.self)
-        .sorted(byKeyPath: RealmViewModel.Property.isCompleted.rawValue)
+        return realm.objects(RealmViewModel.self)
+            .sorted(byKeyPath: RealmViewModel.Property.isCompleted.rawValue)
     }
     
     @discardableResult
     static func add(object: RealmViewModel?, in realm: Realm = try! Realm())
-      -> RealmViewModel {
+    -> RealmViewModel {
         let item = RealmViewModel(value: object as Any)
         try! realm.write {
-          realm.add(item)
+            realm.add(item)
         }
         return item
     }
     
     func toggleCompleted() {
-      guard let realm = realm else { return }
-      try! realm.write {
-        isCompleted = !isCompleted
-      }
+        guard let realm = realm else { return }
+        try! realm.write {
+            isCompleted = !isCompleted
+        }
     }
 }

@@ -4,16 +4,9 @@
 //
 //  Created by Marko Nedeljkovic on 5/4/21.
 //
-
-
 import UIKit
 import Firebase
 import RealmSwift
-
-struct CarInfo {
-    let carInfoType: String?
-    
-}
 
 class CarDetailController: UIViewController {
     
@@ -21,8 +14,8 @@ class CarDetailController: UIViewController {
     
     var detailModel = CarsViewModel(car: Car(carBrand: "carBrand", carModel: "carModel", carBirth: "carBirth", carPower: "carPower", carCapacity: "carCapacity", carPrice: "carPrice", carKMPassed: "carKMPassed", carDesc: "carDesc", photoURL: "photoUrl"))
     
-    var detailRealmModel = RealmViewModel()
-
+    var detailRealmModel = RealmViewModel(carBrand: "carBrand", carModel: "carModel", carBirth: "carBirth", carPower: "carPower", carCapacity: "carCapacity", carPrice: "carPrice", carKMPassed: "carKMPassed", carDesc: "carDesc", photoURL: "photoUrl")
+    
     var tableView = UITableView()
     
     lazy var carImageView: UIImageView = {

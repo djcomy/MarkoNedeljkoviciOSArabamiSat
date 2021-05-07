@@ -40,7 +40,7 @@ extension HomeController: UICollectionViewDataSource {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RealmCell.identifier, for: indexPath) as! RealmCell
             let items = realmStoredResults![indexPath.row]
-
+            
             print("RRR \(items)")
             cell.realmViewModel = items
             

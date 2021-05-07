@@ -116,19 +116,19 @@ extension UIViewController {
 }
 
 extension UITableView {
-
-  @IBInspectable
-  var isEmptyRowsHidden: Bool {
+    
+    @IBInspectable
+    var isEmptyRowsHidden: Bool {
         get {
-          return tableFooterView != nil
+            return tableFooterView != nil
         }
         set {
-          if newValue {
-              tableFooterView = UIView(frame: .zero)
-          } else {
-              tableFooterView = nil
-          }
-       }
+            if newValue {
+                tableFooterView = UIView(frame: .zero)
+            } else {
+                tableFooterView = nil
+            }
+        }
     }
 }
 

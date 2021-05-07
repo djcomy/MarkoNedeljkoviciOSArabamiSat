@@ -12,24 +12,18 @@ class RealmCell: UICollectionViewCell {
     
     public static let identifier = "RealmCell"
     let realm = try! Realm()
-   // private var model: RealmViewModel?
-
+    
     var realmViewModel: RealmViewModel? {
         didSet{
-            
-           // guard let url = NSURL(string:realmViewModel!.photoUrl!) else { return }
-          //  guard NSData.init(contentsOf: url as URL) != nil else { return }
-            
             carBrandLabel.text = realmViewModel!.carBrand
             carModelLabel.text = realmViewModel!.carModel
             carBirthLabel.text = realmViewModel!.carBirth
-            ///carImage.image = UIImage(data:imagedata as Data)
         }
     }
-
-        private var carImage: UIImageView = CarImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
-        
-        private var carBrandLabel: UILabel = {
+    
+    private var carImage: UIImageView = CarImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+    
+    private var carBrandLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -37,8 +31,8 @@ class RealmCell: UICollectionViewCell {
         label.textColor = .darkGray
         label.font = .boldSystemFont(ofSize: 35)
         return label
-        }()
-        private var carModelLabel: UILabel = {
+    }()
+    private var carModelLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -46,8 +40,8 @@ class RealmCell: UICollectionViewCell {
         label.textColor = .darkGray
         label.font = .boldSystemFont(ofSize: 25)
         return label
-        }()
-        private var carBirthLabel: UILabel = {
+    }()
+    private var carBirthLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -55,19 +49,19 @@ class RealmCell: UICollectionViewCell {
         label.textColor = .darkGray
         label.font = .boldSystemFont(ofSize: 20)
         return label
-        }()
-        
-        override init (frame: CGRect) {
+    }()
+    
+    override init (frame: CGRect) {
         super.init(frame: frame)
         
         configureViewComponents()
-        }
-        
-        required init?(coder aDecoder: NSCoder) {
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        }
-        
-        private func configureViewComponents() {
+    }
+    
+    private func configureViewComponents() {
         
         addSubview(carImage)
         carImage.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
@@ -88,13 +82,13 @@ class RealmCell: UICollectionViewCell {
         addSubview(carBirthLabel)
         carBirthLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
         carBirthLabel.centerXAnchor.constraint(equalTo: carBrandLabel.centerXAnchor).isActive = true
-        }
-        
-        func setCellData(_ brand: String, model: String, birth: String , withImage image: UIImage? = nil) {
+    }
+    
+    func setCellData(_ brand: String, model: String, birth: String , withImage image: UIImage? = nil) {
         carBrandLabel.text = brand
         carModelLabel.text = model
         carBirthLabel.text = birth
         carImage.image = image
-        }
     }
+}
 

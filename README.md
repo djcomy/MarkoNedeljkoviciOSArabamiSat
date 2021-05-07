@@ -15,10 +15,9 @@ Commits:
 -------------------------------------------------------------
 ////TODO: 
 
-1. Check why realm won't present data in UIViewController from stored database (some data is showing in car details VC). 
-2. Add additional login (Facebook)
-3. Implement swipe side menu from left side. Some other options should be implemented, as well User's photo in circle on top of it.
-4. Add more possible info for the cars
+1. Add additional login (Facebook)
+2. Implement swipe side menu from left side. Some other options should be implemented, as well User's photo in circle on top of it.
+3. Add more possible info for the cars
 
 -------------------------------------------------------------
 

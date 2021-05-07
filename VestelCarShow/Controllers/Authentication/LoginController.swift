@@ -12,8 +12,6 @@ import RealmSwift
 
 class LoginController: UIViewController {
     
-   // let myPrimaryKey = Person.primaryKey()
-    //var person = Person()
     let realm = try! Realm()
     
     // MARK: - Properties
@@ -211,7 +209,6 @@ extension LoginController: GIDSignInDelegate {
         
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        
         
         Auth.auth().signIn(with: credential) { (result, error) in
             if let error = error {
